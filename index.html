@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Sanskar main styles -->
 	<link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57B+Y1Y9Y/h5d6NfS0/k51M5P5O5Q5E5L5F5D5G5H5I5J5K5L5M5N5O5P5Q5R5S5T5U5V5W5X5Y5Z" crossorigin="anonymous"></script>
     <script src="./assets/js/scripts.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
@@ -85,7 +92,7 @@
                 <h3 class="font-weight-light">Personal Info</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> :<a href="#"> 29/06/2003 </a></li>
+                    <li><span>Birthdate</span> :<a href=""> 29/06/2003 </a></li>
                     <li><span>Email</span> : <a href="mailto:sanskar1shinde@gmail.com">sanskar1shinde@gmail.com</a></li>
 					<li><span>Phone</span> : <a href="tel:+919604875972">+91 9604875972</a></li>
 					<li><span>Address</span> : <a href="https://maps.app.goo.gl/zQ1rLS7RrQ7wz1rq9" target="_blank">Pune</a></li>
@@ -270,10 +277,7 @@
 
     <section class="section bg-dark text-center">
         <div class="container">
-            <div class="row text-center">
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
+            <div class="row justify-content-center"> <div class="col-6 col-md-4 col-lg-2 mb-4"> <div class="row">
                         <div class="col-5 text-right text-light border-right py-3">
                             <div class="m-auto"><i class="ti-user icon-xl"></i></div>
                         </div>
@@ -284,49 +288,45 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="row ">
+                <div class="col-6 col-md-4 col-lg-2 mb-4"> <div class="row ">
                         <div class="col-5 text-right text-light border-right py-3">
                             <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">30</h1>
+                            <h1 id="hoursWorked" class="text-danger font-weight-bold font40">30</h1>
                             <p class="text-light mb-1">Hours Worked</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-4"> <div class="row">
                         <div class="col-5 text-right text-light border-right py-3">
                             <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">3</h1>
+                            <h1 id="projectsFinished" class="text-danger font-weight-bold font40">3</h1>
                             <p class="text-light mb-1">Project Finished</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-4"> <div class="row">
                         <div class="col-5 text-right text-light border-right py-3">
                             <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">2</h1>
+                            <h1 id="happyClients" class="text-danger font-weight-bold font40">2</h1>
                             <p class="text-light mb-1">Happy Clients</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-4"> <div class="row">
                         <div class="col-5 text-right text-light border-right py-3">
                             <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">200</h1>
+                            <h1 id="coffeeDrank" class="text-danger font-weight-bold font40">200</h1>
                             <p class="text-light mb-1">Coffee Drinked</p>
                         </div>
                     </div>
