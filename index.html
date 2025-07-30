@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Sanskar main styles -->
 	<link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
-    <script src="./assets/js/firebaseauth.js"></script>
-    <script type="module" src="./assets/js/firebaseauth.js"></script>
+    <script type="module" src="./assets/js/scripts.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
@@ -88,7 +85,7 @@
                 <h3 class="font-weight-light">Personal Info</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 29/06/2003</li>
+                    <li><span>Birthdate</span> :<a href="#"> 29/06/2003 </a></li>
                     <li><span>Email</span> : <a href="mailto:sanskar1shinde@gmail.com">sanskar1shinde@gmail.com</a></li>
 					<li><span>Phone</span> : <a href="tel:+919604875972">+91 9604875972</a></li>
 					<li><span>Address</span> : <a href="https://maps.app.goo.gl/zQ1rLS7RrQ7wz1rq9" target="_blank">Pune</a></li>
@@ -281,6 +278,19 @@
     <section class="section bg-dark text-center">
         <div class="container">
             <div class="row text-center">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-user icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 id="liveVisitors" class="text-danger font-weight-bold font40">0</h1>
+                            <p class="text-light mb-1">Live Visitors</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="row ">
                         <div class="col-5 text-right text-light border-right py-3">
@@ -292,6 +302,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="row">
                         <div class="col-5 text-right text-light border-right py-3">
@@ -303,6 +314,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="row">
                         <div class="col-5 text-right text-light border-right py-3">
@@ -314,6 +326,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="row">
                         <div class="col-5 text-right text-light border-right py-3">
@@ -325,6 +338,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -541,10 +555,6 @@
                             <button type="submit" class="form-control btn btn-primary">Send Message</button>
                         </div>
                     </form>
-
-                    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
-                    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
-                    <script src="./assets/js/firebaseauth.js"></script>
                     </div>
                 </div>
                 <div class="col-lg-4">
